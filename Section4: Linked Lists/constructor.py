@@ -9,3 +9,7 @@ class LinkedList:
         self.head = new_node
         self.tail = new_node
         self.length = 1
+
+new_linked_list = LinkedList(4)
+
+print(new_linked_list.head.value)
