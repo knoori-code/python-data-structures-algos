@@ -43,3 +43,14 @@ class LinkedList:
             self.head = None
             self.tail = None
         return temp
+    
+
+new_linked_list = LinkedList(1)
+
+new_linked_list.append(2)
+
+new_linked_list.print_list()
+
+new_linked_list.pop()
+
+new_linked_list.print_list()
