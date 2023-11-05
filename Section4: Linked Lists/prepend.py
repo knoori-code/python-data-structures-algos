@@ -52,4 +52,5 @@ class LinkedList:
         else:
             new_node.next = self.head
             self.head = new_node
-
+        self.length += 1
+        return True
