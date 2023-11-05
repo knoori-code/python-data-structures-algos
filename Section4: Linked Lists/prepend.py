@@ -54,3 +54,12 @@ class LinkedList:
             self.head = new_node
         self.length += 1
         return True
+
+
+new_linked_list = LinkedList(2)
+
+new_linked_list.append(3)
+
+new_linked_list.prepend(1)
+
+new_linked_list.print_list()
