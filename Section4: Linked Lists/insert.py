@@ -95,3 +95,10 @@ class LinkedList:
         temp.next = new_node
         self.length += 1
         return True
+    
+
+linked_list = LinkedList(0)
+linked_list.append(2)
+linked_list.insert(1, 1)
+
+linked_list.print_list()
