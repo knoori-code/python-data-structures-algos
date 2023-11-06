@@ -104,8 +104,8 @@ class LinkedList:
         if index == self.length - 1:
             return self.pop()
         pre = self.get(index - 1)
-        temp = self.get(index)
+        temp = pre.next
         pre.next = temp.next
         temp.next = None
         self.length -= 1
-        return True
+        return temp
