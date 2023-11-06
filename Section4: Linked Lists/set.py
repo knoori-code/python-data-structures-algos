@@ -81,3 +81,12 @@ class LinkedList:
             temp.value = value
             return True
         return False
+    
+
+linked_list = LinkedList(11)
+linked_list.append(3)
+linked_list.append(23)
+linked_list.append(7)
+
+linked_list.set_value(1, 4)
+linked_list.print_list()
