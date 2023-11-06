@@ -109,3 +109,13 @@ class LinkedList:
         temp.next = None
         self.length -= 1
         return temp
+
+
+linked_list = LinkedList(11)
+linked_list.append(3)
+linked_list.append(23)
+linked_list.append(7)
+
+linked_list.remove(2)
+
+linked_list.print_list()
