@@ -121,4 +121,12 @@ class LinkedList:
             temp.next = before
             before = temp
             temp = after
-            
+
+
+linked_list = LinkedList(11)
+linked_list.append(3)
+linked_list.append(23)
+linked_list.append(7)
+
+linked_list.reverse()
+linked_list.print_list()
