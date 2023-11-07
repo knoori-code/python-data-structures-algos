@@ -123,10 +123,10 @@ class LinkedList:
             temp = after
 
 
-linked_list = LinkedList(11)
+linked_list = LinkedList(1)
+linked_list.append(2)
 linked_list.append(3)
-linked_list.append(23)
-linked_list.append(7)
+linked_list.append(4)
 
 linked_list.reverse()
 linked_list.print_list()
