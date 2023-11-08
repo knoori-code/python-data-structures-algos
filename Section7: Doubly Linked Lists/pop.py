@@ -42,3 +42,16 @@ class DoublyLinkedList:
             self.head = None
             self.tail = None
         return temp
+    
+
+doubly_linked_list = DoublyLinkedList(1)
+doubly_linked_list.append(2)
+doubly_linked_list.append(3)
+doubly_linked_list.append(4)
+
+doubly_linked_list.pop()
+doubly_linked_list.pop()
+doubly_linked_list.pop()
+doubly_linked_list.pop()
+
+doubly_linked_list.print_list()
