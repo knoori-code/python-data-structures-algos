@@ -23,4 +23,8 @@ class DoublyLinkedList:
         if self.length == 0:
             self.head = new_node
             self.tail = new_node
-            
+            return True
+        self.tail.next = new_node
+        new_node.prev = self.tail
+        self.tail = new_node
+        self.length = 1
