@@ -77,5 +77,6 @@ doubly_linked_list.append(2)
 print(doubly_linked_list.pop_first())
 # Return 2nd node
 print(doubly_linked_list.pop_first())
-# Print linked list
-doubly_linked_list.print_list()
+# Returns None
+ print(doubly_linked_list.pop_first())
+
