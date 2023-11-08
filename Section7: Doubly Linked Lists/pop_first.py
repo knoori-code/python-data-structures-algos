@@ -15,7 +15,7 @@ class DoublyLinkedList:
     def print_list(self):
         temp = self.head
         while temp:
-            print(temp.value)
+            print(temp.value) 
             temp = temp.next
 
     def append(self, value):
@@ -66,7 +66,7 @@ class DoublyLinkedList:
             self.head = self.head.next
             self.head.prev = None
             temp.next = None
-            self.length -= 1
+        self.length -= 1
         return temp
 
 
