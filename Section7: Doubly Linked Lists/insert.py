@@ -99,9 +99,19 @@ class DoublyLinkedList:
         new_node = Node(value)
         before = self.get(index - 1)
         after = before.next
-        before.next = new_node
         new_node.prev = before
         new_node.next = after
+        before.next = new_node
         after.prev = new_node
         self.length += 1
         return True
+    
+
+doubly_linked_list = DoublyLinkedList(1)
+doubly_linked_list.append(2)
+doubly_linked_list.append(3)
+doubly_linked_list.append(4)
+
+doubly_linked_list.insert(3, 50)
+
+doubly_linked_list.print_list()
