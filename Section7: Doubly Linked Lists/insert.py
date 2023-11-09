@@ -92,9 +92,8 @@ class DoublyLinkedList:
     def insert(self, index, value):
         if index < 0 or index > self.length:
             return False
-        new_node = Node(value)
-        if self.length == 0:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        
