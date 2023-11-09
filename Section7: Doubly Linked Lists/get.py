@@ -80,4 +80,12 @@ class DoublyLinkedList:
             temp = self.tail
             for i in range(self.length - 1, index, -1):
                 temp = temp.prev
-        return temp
+        return temp.value
+    
+
+doubly_linked_list = DoublyLinkedList(1)
+doubly_linked_list.append(2)
+doubly_linked_list.append(3)
+doubly_linked_list.append(4)
+
+print(doubly_linked_list.get(0))
