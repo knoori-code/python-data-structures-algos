@@ -116,6 +116,8 @@ class DoublyLinkedList:
         temp = self.get(index)
         temp.prev.next = temp.next
         temp.next.prev = temp.prev
+        temp.next = None
+        temp.prev = None
         self.length -= 1
         return temp
     
