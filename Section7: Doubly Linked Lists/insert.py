@@ -96,4 +96,12 @@ class DoublyLinkedList:
             return self.prepend(value)
         if index == self.length:
             return self.append(value)
-        
+        new_node = Node(value)
+        before = self.get(index - 1)
+        temp = before.next
+        before.next = new_node
+        new_node.prev = before
+        new_node.next = temp
+        temp.prev = new_node
+        self.length += 1
+        return True
