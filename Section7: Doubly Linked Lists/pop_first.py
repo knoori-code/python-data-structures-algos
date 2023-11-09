@@ -78,5 +78,4 @@ print(doubly_linked_list.pop_first())
 # Return 2nd node
 print(doubly_linked_list.pop_first())
 # Returns None
- print(doubly_linked_list.pop_first())
-
+print(doubly_linked_list.pop_first())
