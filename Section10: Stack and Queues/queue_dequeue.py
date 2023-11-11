@@ -31,9 +31,17 @@ class Queue:
         if self.length == 0:
             return None
         temp = self.first
-        self.first = self.first.nextgi
+        self.first = self.first.next
         temp.next = None
         self.length -= 1
         if self.length == 0:
             self.last = None
         return temp
+    
+
+new_queue = Queue(1)
+new_queue.enqueue(2)
+
+print(new_queue.dequeue())
+print(new_queue.dequeue())
+print(new_queue.dequeue())
