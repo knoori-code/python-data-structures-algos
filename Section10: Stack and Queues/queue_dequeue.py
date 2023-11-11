@@ -28,4 +28,12 @@ class Queue:
         self.length += 1
 
     def dequeue(self):
-        
+        if self.length == 0:
+            return None
+        temp = self.first
+        self.first = self.first.nextgi
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.last = None
+        return temp
