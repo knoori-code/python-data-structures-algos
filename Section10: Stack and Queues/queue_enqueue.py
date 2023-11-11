@@ -26,4 +26,10 @@ class Queue:
             self.last.next = new_node
             self.last = new_node
         self.length += 1
-        return True
+
+
+new_queue = Queue(1)
+new_queue.enqueue(2)
+new_queue.enqueue(3)
+
+new_queue.print_queue()
