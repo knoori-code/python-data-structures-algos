@@ -40,3 +40,4 @@ my_stack.push(1)
 
 print(my_stack.pop())
 print(my_stack.pop())
+print(my_stack.pop())
