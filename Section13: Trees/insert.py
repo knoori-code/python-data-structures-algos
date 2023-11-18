@@ -17,4 +17,9 @@ class BinarySearchTree:
         temp = self.root
         while True:
             if new_node.value == temp.value:
-                return False        
+                return False
+            if new_node.value < temp.value:
+                if temp.left is None:
+                    temp.left == new_node
+                    return True
+                temp = temp.left         
