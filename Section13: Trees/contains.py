@@ -40,3 +40,17 @@ class BinarySearchTree:
                 return True
         return False
             
+
+new_tree = BinarySearchTree()
+new_tree.insert(47)
+new_tree.insert(21)
+new_tree.insert(76)
+new_tree.insert(18)
+new_tree.insert(27)
+new_tree.insert(52)
+new_tree.insert(82)
+
+print(new_tree.contains(100))
+print(new_tree.contains(21))
+print(new_tree.contains(76))
+print(new_tree.contains(1))
