@@ -33,5 +33,12 @@ class BinarySearchTree:
         if self.root is None:
             return False
         temp = self.root
-        while True:
+        while temp is not None:
+            if value == temp.value:
+                return True
+            if value < temp.value:
+                temp = temp.left
+            else:
+                temp = temp.right
+        return False
             
