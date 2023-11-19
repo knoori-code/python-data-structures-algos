@@ -11,3 +11,8 @@ class HashTable:
     def print_table(self):
         for i, val in enumerate(self.data_map):
             print(i, ": ", val)
+
+
+new_hash_table = HashTable()
+
+new_hash_table.print_table()
