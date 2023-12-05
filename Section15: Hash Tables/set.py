@@ -16,3 +16,13 @@ class HashTable:
         index = self.__hash(key)
         if self.data_map[index] == None:
             self.data_map[index] = []
+        self.data_map[index].append([key, value])
+
+
+new_hash_table = HashTable()
+
+new_hash_table.set_item('bolts', 1400)
+new_hash_table.set_item('washers', 50)
+new_hash_table.set_item('lumber', 70)
+
+new_hash_table.print_table()
