@@ -18,3 +18,13 @@ class Graph:
             self.adj_list[v2].append(v1)
             return True
         return False
+    
+
+new_graph = Graph()
+
+new_graph.add_vertex('A')
+new_graph.add_vertex('B')
+
+new_graph.add_edge('A', 'B')
+
+new_graph.print_graph()
