@@ -22,9 +22,9 @@ class Graph:
 
 new_graph = Graph()
 
-new_graph.add_vertex('A')
-new_graph.add_vertex('B')
+new_graph.add_vertex(1)
+new_graph.add_vertex(2)
 
-new_graph.add_edge('A', 'B')
+new_graph.add_edge(1, 2)
 
 new_graph.print_graph()
