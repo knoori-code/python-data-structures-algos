@@ -15,3 +15,6 @@ class Graph:
 
 new_graph = Graph()
 
+new_graph.add_vertex('A')
+
+new_graph.print_graph()
