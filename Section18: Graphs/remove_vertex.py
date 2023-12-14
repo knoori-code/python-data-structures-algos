@@ -30,4 +30,31 @@ class Graph:
         return False
     
     def remove_vertex(self, vertex):
-        
+        if vertex in self.adj_list.keys():
+            for other_vertex in self.adj_list[vertex]:
+                self.adj_list[other_vertex].remove(vertex)
+            del self.adj_list[vertex]
+            return True
+        return False
+    
+
+new_graph = Graph()
+
+new_graph.add_vertex('A')
+new_graph.add_vertex('B')
+new_graph.add_vertex('C')
+new_graph.add_vertex('D')
+
+new_graph.add_edge('A', 'B')
+new_graph.add_edge('A', 'C')
+new_graph.add_edge('A', 'D')
+
+new_graph.add_edge('B', 'D')
+new_graph.add_edge('C', 'D')
+
+new_graph.print_graph()
+print('\n')
+
+new_graph.remove_vertex('D')
+
+new_graph.print_graph()
