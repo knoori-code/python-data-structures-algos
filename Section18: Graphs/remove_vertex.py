@@ -50,7 +50,7 @@ new_graph.add_edge('A', 'C')
 new_graph.add_edge('A', 'D')
 
 new_graph.add_edge('B', 'D')
-new_graph.add_edge('C', 'D')
+new_graph.add_edge('C', 'D') 
 
 new_graph.print_graph()
 print('\n')
