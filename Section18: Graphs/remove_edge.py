@@ -25,3 +25,15 @@ class Graph:
             self.adj_list[v2].remove(v1)
             return True
         return False
+    
+
+new_graph = Graph()
+
+new_graph.add_vertex(1)
+new_graph.add_vertex(2)
+
+new_graph.add_edge(1, 2)
+
+new_graph.print_graph()
+new_graph.remove_edge(1, 2)
+new_graph.print_graph()
